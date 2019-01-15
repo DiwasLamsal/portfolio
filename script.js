@@ -2,12 +2,24 @@
 $( window ).on("load", function() {
 	loaded();
 	cursorEffect();
-
+	removeLoader();
 	$('li').on('hover', function(){
 		console.log("asd");
 	});
 
 });
+
+// Function to remove Loader
+function removeLoader(){
+	setTimeout(function(){
+		var loadText = document.getElementsByClassName('loadText')[0];
+		loadText.innerHTML = "Complete";
+
+	}, 1000);
+
+ setTimeout($('.loader').css("display", "none"), 3000);
+
+}
 
 
 // Function called when window loads
