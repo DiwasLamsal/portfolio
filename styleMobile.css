@@ -1,0 +1,108 @@
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ Less than 800px sizes ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+
+
+
+*{
+	margin: 0;
+	font-family: sans-serif;
+}
+
+
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ Body ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+
+body{
+	text-align: center;
+  overflow-x: hidden;
+}
+
+
+
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ Navigation Aside ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+
+aside{
+	width: 15vw;
+	position: fixed;
+	left: 0;
+	height: 100vh;
+	text-align: center;
+	z-index: 100;
+}
+
+.nav-pc{
+	display: none;
+}
+
+
+
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ Main Container ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+
+main .container {
+	height: 100vh;
+	color: white;
+}
+
+main .container:nth-child(odd){
+	background: linear-gradient(to bottom, #0eb8ae 0%, #1fc8db 50%, #2cb5e8 100%);
+}
+
+main .container:nth-child(even){
+	background: linear-gradient(to bottom, #2cb5e8 0%, #1fc8db 50%, #0eb8ae 100%);
+}
+
+
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ Intro subsection ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+
+#intro{
+	background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('intro.jpg') fixed;
+	height: 60vh;
+}
+
+.subContainer{
+	margin: auto;
+	width: 50%;
+	height: auto;
+	text-align: center;
+}
+
+
+.subContainer img{
+	z-index: 2;
+	width: calc(7vw + 100px);
+	padding-top: 10%;
+	filter: brightness(80%);
+	transition: .3s;
+}
+
+.subContainer img:hover{
+	filter: brightness(100%);
+}
+
+
+
+
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ Headings ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+
+.mainHeading{
+  padding-top: 35%;
+	font-size: calc(2.5vw + 15px);
+	font-family: Papyrus, fantasy;
+}
+
+.subHeading{
+	padding-top: 15%;
+	font-size: calc(1.5vw + 15px);
+
+}
+
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ Scroll button ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+
+.scrollto{
+	display: none;
+}
+
+
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ Ball ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+
+  .bubble{
+    display: none;
+  }

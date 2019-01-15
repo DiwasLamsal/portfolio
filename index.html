@@ -1,10 +1,124 @@
-<<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
     <title>Diwas Lamsal</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel = "icon" href = "Images/myAvatar.png" type = "image/x-icon/">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <link rel = "stylesheet" media="screen and (min-device-width: 800px)"  type = "text/css" href = "style.css">
+    <link rel = "stylesheet" media="screen and (max-device-width: 799px)"  type = "text/css" href = "styleMobile.css">
+    <link rel = "stylesheet" type = "text/css" href = "common.css">
+    <script src="script.js"></script>
   </head>
+<!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ Body Begins ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
   <body>
 
+<!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ Sidebar Navigation ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+    <aside>
+      <ul class = "nav-pc">
+        <li id = "introli" class = "selected" onclick="scrollFunction('intro')"></li>
+        <li id = "aboutli" onclick="scrollFunction('about')"> </li>
+        <li id = "educationli" onclick="scrollFunction('education')"> </li>
+        <li id = "portfolioli" onclick="scrollFunction('portfolio')"> </li>
+        <li id = "skillsli" onclick="scrollFunction('skills')"> </li>
+        <li id = "contactli" onclick="scrollFunction('contact')"> </li>
+      </ul>
+    </aside>
+<!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ End of Navigation ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+
+<!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ Main Containers ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+    <main>
+      <div id = "intro" class = "container">
+        <h1 class = "mainHeading">Hey<br>I'm Diwas</h1><br>
+
+        <br>
+        <div class = "subContainer">
+            <img src = "Images/pencilSketch3.png">
+        </div>
+        <h2 class = "subHeading" style = "z-index: 10;">
+          &nbsp;&nbsp; <a onclick="scrollFunction('about')">I'm a Software Engineer</a>
+        </h2>
+
+
+          <div class = "scrollto down" onclick="scrollFunction('about')">
+            &#8675;
+          </div>
+      </div>
+
+
+
+      <div id = "about" class = "container">
+        <div class = "scrollto up" onclick="scrollFunction('intro')">
+          &#8673;
+        </div>
+
+        <h1 class = "mainHeading">About</h1><br>
+
+        <p>Hey! It's Diwas </p>
+
+        <div class = "scrollto down" onclick="scrollFunction('education')">
+          &#8675;
+        </div>
+      </div>
+
+
+
+      <div id = "education" class = "container">
+        <div class = "scrollto up" onclick="scrollFunction('about')">
+          &#8673;
+        </div>
+
+        <h1 class = "mainHeading">Education</h1><br>
+
+        <p>Hey! It's Diwas </p>
+        <div class = "scrollto down" onclick="scrollFunction('portfolio')">
+          &#8675;
+        </div>
+      </div>
+
+
+
+
+      <div id = "portfolio" class = "container">
+        <div class = "scrollto up" onclick="scrollFunction('education')">
+          &#8673;
+        </div>
+        <h1 class = "mainHeading">Portfolio</h1><br>
+
+        <p>Hey! It's Diwas </p>
+        <div class = "scrollto down" onclick="scrollFunction('skills')">
+          &#8675;
+        </div>
+      </div>
+
+
+
+
+      <div id = "skills" class = "container">
+        <div class = "scrollto up" onclick="scrollFunction('portfolio')">
+          &#8673;
+        </div>
+        <h1 class = "mainHeading">Skills</h1><br>
+        <p>Hey! It's Diwas </p>
+        <div class = "scrollto down" onclick="scrollFunction('contact')">
+          &#8675;
+        </div>
+      </div>
+
+      <div id = "contact" class = "container">
+        <div class = "scrollto up" onclick="scrollFunction('skills')">
+          &#8673;
+        </div>
+        <h1 class = "mainHeading">Contact</h1><br>
+        <p>Hey! It's Diwas </p>
+
+      </div>
+    </main>
+<!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ End of Main Containers ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+
+
   </body>
+<!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ End of body ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+
 </html>

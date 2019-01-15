@@ -1,0 +1,38 @@
+
+*{
+	margin: 0;
+	font-family: sans-serif;
+}
+
+
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ Main Container ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+
+main .container {
+	height: 100vh;
+	color: white;
+	z-index: 0;
+	position: relative;
+}
+
+main .container:nth-child(odd){
+	background: linear-gradient(to bottom, #0eb8ae 0%, #1fc8db 50%, #2cb5e8 100%);
+}
+
+main .container:nth-child(even){
+	background: linear-gradient(to bottom, #2cb5e8 0%, #1fc8db 50%, #0eb8ae 100%);
+}
+
+
+
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ Headings ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+
+.mainHeading{
+	padding-top: 5%;
+	font-size: calc(2.5vw + 15px);
+	font-family: Papyrus, fantasy;
+}
+
+.subHeading{
+	margin-top: 7%;
+	font-size: calc(1.5vw + 15px);
+}
