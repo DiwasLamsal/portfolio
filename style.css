@@ -7,7 +7,7 @@
 body{
 	text-align: center;
 	overflow: hidden;
-	cursor: url("http://downloads.totallyfreecursors.com/cursor_files/magicwand2.ani"), url("http://downloads.totallyfreecursors.com/thumbnails/magicwand2.gif"), auto;
+	cursor: url("magicwand.gif"), auto;
 }
 
 a{
