@@ -106,14 +106,14 @@ body:hover .nav-pc{
   display: inline-block;
 	width: 50px;
 	text-align: center;
-	height: 45px;
+	height: 35px;
   border: 3px solid white;
-	padding-top: 5px;
+	padding-top: 15px;
 	transition: .3s;
   margin: auto;
   border-radius: 50%;
 	opacity: 0.5;
-	font-size: 35px;
+	font-size: 20px;
 	animation: animateScrollButton 5s ease-out infinite;
 	user-select: none;
 	cursor: url('compass.png'), default;
