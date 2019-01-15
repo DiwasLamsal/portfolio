@@ -7,11 +7,11 @@
 body{
 	text-align: center;
 	overflow: hidden;
-	cursor: url("magicwand.gif"), auto;
+	cursor: url("magicwand.gif"), default;
 }
 
 a{
-	cursor: url('compass.png'), default;
+	cursor: url('compass.png'), auto;
 }
 
 /* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ Navigation Aside ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
@@ -75,7 +75,6 @@ body:hover .nav-pc{
 /* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ Intro subsection ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
 
 #intro{
-	background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('intro.jpg') fixed;
 
 }
 
