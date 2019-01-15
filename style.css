@@ -11,7 +11,7 @@ body{
 }
 
 a{
-	cursor: url('Compass.png'), default;
+	cursor: url('compass.png'), default;
 }
 
 /* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ Navigation Aside ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
@@ -34,7 +34,7 @@ aside{
 	justify-content: center;
 	opacity: 0.7;
 	transition: .3s;
-	cursor: url('Compass.png'), default;
+	cursor: url('compass.png'), default;
 }
 
 body:hover .nav-pc{
@@ -44,7 +44,7 @@ body:hover .nav-pc{
 /* https://codepen.io/ming/pen/YwGbwV */
 .nav-pc li{
 	padding: 5px;
-	cursor: url('Compass.png'), default;;
+	cursor: url('compass.png'), default;;
 	margin: 30px;
 	transition: .3s;
 	width: 1.0em;
@@ -116,7 +116,7 @@ body:hover .nav-pc{
 	font-size: 35px;
 	animation: animateScrollButton 5s ease-out infinite;
 	user-select: none;
-	cursor: url('Compass.png'), default;
+	cursor: url('compass.png'), default;
 }
 
 @keyframes animateScrollButton{
