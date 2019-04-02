@@ -7,12 +7,8 @@
 body{
 	text-align: center;
 	overflow: hidden;
-	cursor: url("magicwand.gif"), default;
 }
 
-a{
-	cursor: url('compass.png'), auto;
-}
 
 /* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ Navigation Aside ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
 
@@ -25,6 +21,10 @@ aside{
 	z-index: 1;
 }
 
+.nav-mobile{
+	display: none;
+}
+
 .nav-pc{
 	margin-left: -10px;
 	height: 100%;
@@ -34,7 +34,6 @@ aside{
 	justify-content: center;
 	opacity: 0.7;
 	transition: .3s;
-	cursor: url('compass.png'), default;
 }
 
 body:hover .nav-pc{
@@ -44,20 +43,20 @@ body:hover .nav-pc{
 /* https://codepen.io/ming/pen/YwGbwV */
 .nav-pc li{
 	padding: 5px;
-	cursor: url('compass.png'), default;;
+	cursor: pointer;
 	margin: 30px;
 	transition: .3s;
 	width: 1.0em;
 	height: 1.0em;
 	border-top: 1px solid #fff;
 	box-sizing: border-box;
-	border: 2px solid #fff;
+	border: 2px solid #111;
 	transition: .3s;
 	transform: rotate(135deg);
 }
 
 .nav-pc li:hover {
-	background-color: rgba(255,0,0,.4);
+	background-color: rgba(0,0,0,.7);
 	transform: rotate(0deg);
 }
 
@@ -67,24 +66,12 @@ body:hover .nav-pc{
 
 .nav-pc .selected {
 	transform: rotate(0deg);
-	background-color: white;
+	background-color: black;
 }
 
 
 
 /* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ Intro subsection ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
-
-#intro{
-
-}
-
-.subContainer{
-	margin: auto;
-	width: 20%;
-	height: auto;
-	text-align: center;
-}
-
 
 .subContainer img{
 	width: calc(7vw + 100px);
@@ -96,68 +83,3 @@ body:hover .nav-pc{
 .subContainer img:hover{
 	filter: brightness(100%);
 }
-
-
-/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ Scroll ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
-
-.scrollto{
-  position: absolute;
-  display: inline-block;
-	width: 50px;
-	text-align: center;
-	height: 35px;
-  border: 3px solid white;
-	padding-top: 15px;
-	transition: .3s;
-  margin: auto;
-  border-radius: 50%;
-	opacity: 0.5;
-	font-size: 20px;
-	animation: animateScrollButton 5s ease-out infinite;
-	user-select: none;
-	cursor: url('compass.png'), default;
-}
-
-@keyframes animateScrollButton{
-	0%{transform: rotateY(0deg)}
-	80%{transform: rotateY(0deg); opacity: 0.5;}
-	90%{transform: rotateY(180deg); opacity:1;}
-	100%{transform: rotateY(0deg); opacity: 0.5;}
-}
-
-.scrollto:hover{
-	opacity: 1;
-	transform: rotateY(0deg);
-	animation: none;
-}
-
-.up{
-  top: 30px;
-  right: 2.5%;
-}
-
-
-.down{
-  bottom: 30px;
-  right: 2.5%;
-}
-
-
-
-/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ Ball ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
-
-  .bubble{
-    position: absolute;
-    width: 15px;
-    height: 15px;
-		animation: boxAnimation .5s ease-in-out infinite;
-		animation-fill-mode: both;
-		opacity: 1;
-    border-radius: 50%;
-		z-index: -1;
-  }
-
-	@keyframes boxAnimation{
-		50%{transform: rotateY(180deg)}
-		100%{transform: rotateY(360deg)}
-	}

@@ -5,7 +5,12 @@
     <title>Diwas Lamsal</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel = "icon" href = "Images/myAvatar.png" type = "image/x-icon/">
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <!-- jQuery library -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
     <link rel = "stylesheet" type = "text/css" href = "common.css">
     <link rel = "stylesheet" media="screen and (min-device-width: 800px)"  type = "text/css" href = "style.css">
     <link rel = "stylesheet" media="screen and (max-device-width: 799px)"  type = "text/css" href = "styleMobile.css">
@@ -29,12 +34,21 @@
         <li id = "skillsli" onclick="scrollFunction('skills')"> </li>
         <li id = "contactli" onclick="scrollFunction('contact')"> </li>
       </ul>
+      <ul class = "nav-mobile">
+        <li id = "introli" class = "selected" onclick="scrollFunction('intro')">Intro</li>
+        <li id = "aboutli" onclick="scrollFunction('about')">About</li>
+        <li id = "educationli" onclick="scrollFunction('education')">Education</li>
+        <li id = "portfolioli" onclick="scrollFunction('portfolio')">Portfolio</li>
+        <li id = "skillsli" onclick="scrollFunction('skills')">Skills</li>
+        <li id = "contactli" onclick="scrollFunction('contact')">Contact</li>
+      </ul>
     </aside>
+
 <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ End of Navigation ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
 
 <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ Main Containers ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
     <main>
-      <div id = "intro" class = "container">
+      <div id = "intro" class = "container-fluid">
         <h1 class = "mainHeading">Hey<br>I'm Diwas</h1><br>
 
         <br>
@@ -46,75 +60,53 @@
         </h2>
 
 
-          <div class = "scrollto down" onclick="scrollFunction('about')">
-            &#8675;
-          </div>
+
       </div>
 
 
+      <div id = "about" class = "container-fluid">
 
-      <div id = "about" class = "container">
-        <div class = "scrollto up" onclick="scrollFunction('intro')">
-          &#8673;
-        </div>
 
         <h1 class = "mainHeading">About</h1><br>
 
         <p>Hey! It's Diwas </p>
 
-        <div class = "scrollto down" onclick="scrollFunction('education')">
-          &#8675;
-        </div>
+
       </div>
 
 
+      <div id = "education" class = "container-fluid">
 
-      <div id = "education" class = "container">
-        <div class = "scrollto up" onclick="scrollFunction('about')">
-          &#8673;
-        </div>
 
         <h1 class = "mainHeading">Education</h1><br>
 
         <p>Hey! It's Diwas </p>
-        <div class = "scrollto down" onclick="scrollFunction('portfolio')">
-          &#8675;
-        </div>
+
       </div>
 
 
 
 
-      <div id = "portfolio" class = "container">
-        <div class = "scrollto up" onclick="scrollFunction('education')">
-          &#8673;
-        </div>
+      <div id = "portfolio" class = "container-fluid">
+
         <h1 class = "mainHeading">Portfolio</h1><br>
 
         <p>Hey! It's Diwas </p>
-        <div class = "scrollto down" onclick="scrollFunction('skills')">
-          &#8675;
-        </div>
+
       </div>
 
 
 
 
-      <div id = "skills" class = "container">
-        <div class = "scrollto up" onclick="scrollFunction('portfolio')">
-          &#8673;
-        </div>
+      <div id = "skills" class = "container-fluid">
+
         <h1 class = "mainHeading">Skills</h1><br>
         <p>Hey! It's Diwas </p>
-        <div class = "scrollto down" onclick="scrollFunction('contact')">
-          &#8675;
-        </div>
+
       </div>
 
-      <div id = "contact" class = "container">
-        <div class = "scrollto up" onclick="scrollFunction('skills')">
-          &#8673;
-        </div>
+      <div id = "contact" class = "container-fluid">
+
         <h1 class = "mainHeading">Contact</h1><br>
         <p>Hey! It's Diwas </p>
 

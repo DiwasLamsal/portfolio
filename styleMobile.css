@@ -22,7 +22,7 @@ body{
 aside{
 	width: 15vw;
 	position: fixed;
-	left: 0;
+	right: 0;
 	height: 100vh;
 	text-align: center;
 	z-index: 100;
@@ -32,20 +32,24 @@ aside{
 	display: none;
 }
 
+.nav-mobile{
+	list-style: none;
+}
+
 
 
 /* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ Main Container ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
 
-main .container {
+main .containera {
 	height: 100vh;
 	color: white;
 }
 
-main .container:nth-child(odd){
+main .containera:nth-child(odd){
 	background: linear-gradient(to bottom, #0eb8ae 0%, #1fc8db 50%, #2cb5e8 100%);
 }
 
-main .container:nth-child(even){
+main .containera:nth-child(even){
 	background: linear-gradient(to bottom, #2cb5e8 0%, #1fc8db 50%, #0eb8ae 100%);
 }
 
@@ -53,7 +57,7 @@ main .container:nth-child(even){
 /* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ Intro subsection ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
 
 #intro{
-	height: 60vh;
+
 }
 
 .subContainer{
